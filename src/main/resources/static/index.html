@@ -1,27 +1,170 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Store</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    
+</body>
+    <header class="header"> 
+        <a href="index.html"><img class="header__logo" src="img/logo.png" alt="LogoTipo"></a>
+    </header>
 
-<html>
-    <head>
-        <title>Tienda en linea</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    
-    <body>
-        <div>
-            <h1 style="text-align: center">Home</h1>
-            <p>Bienvenidos a la pagina principal de la tienda en linea</p>
+    <nav class="navegacion">
+        <a class= "navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class= "navegacion__enlace" href="nosotros.html">Nosotros</a>
+        
+    </nav>
+
+    <main class="contenedor">
+        
+        <h1>Nuestros Productos</h1>
+
+        <div class="grid">
+
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/1.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion" >
+                        <p class="producto__nombre">VueJS</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div> <!--Fin de la clase producto-->
+
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/2.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion" >
+                        <p class="producto__nombre">AngularJS</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div> <!--Fin de la clase producto-->
+
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/3.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion" >
+                        <p class="producto__nombre">ReactJS</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div> <!--Fin de la clase producto-->
+
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/4.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion" >
+                        <p class="producto__nombre">Redux</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div> <!--Fin de la clase producto-->
+
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/5.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion" >
+                        <p class="producto__nombre">Node.js</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div> <!--Fin de la clase producto-->
+
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/6.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion" >
+                        <p class="producto__nombre">SASS</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div> <!--Fin de la clase producto-->
+
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/7.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion" >
+                        <p class="producto__nombre">HTML5</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div> <!--Fin de la clase producto-->
+
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/8.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion" >
+                        <p class="producto__nombre">GitHub</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div> <!--Fin de la clase producto-->
+
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/9.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion" >
+                        <p class="producto__nombre">BulmaCSS</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div> <!--Fin de la clase producto-->
+
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/10.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion" >
+                        <p class="producto__nombre">TypeScript</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div> <!--Fin de la clase producto-->
+
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/11.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion" S>
+                        <p class="producto__nombre">Drupal</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div> <!--Fin de la clase producto-->
+
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/12.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion" >
+                        <p class="producto__nombre">JavaScript</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div> <!--Fin de la clase producto-->
+
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen" src="img/13.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion" >
+                        <p class="producto__nombre">GraphQL</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div> <!--Fin de la clase producto-->
+
+            <div class="producto">
+                <a href="producto.html"><img class="producto__imagen"  src="img/14.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion" >
+                        <p class="producto__nombre">WordPress</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div> <!--Fin de la clase producto-->
+
+            <div class="grafico grafico--camisas"></div>
+            <div class="grafico grafico--node"></div>
+
+            
+
         </div>
-        
-        <p style="text-align: left">Lorem ipsum <strong>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</strong> </p>
-        <p style="text-align: right">Lorem ipsum <u>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</u></p>
-        <p style="text-align: center">Lorem ipsum <i>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</i></p>
-    
-        <br>
-        </br>
-        
-        <p>Ultima linea</p>
-    
-    
-    </body>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store -  Todos los derechos Reservados 2022</p>
+    </footer>
+
 </html>
