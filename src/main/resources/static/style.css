@@ -278,3 +278,7 @@ h3{
     background-color: var(--secundarioOscuro); /*Color que aparecera cuando el curso se posicione sobre el cursor*/
     
 }
+
+.header__logo {
+
+}
