@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
     <head th:replace="~{layout/plantilla :: head}">
         <title>TechShop</title>
     </head>
     <body>
         <!-- 1 Sección principal para mostrar la informaccion de las categorias -->
         <section th:fragment="categoriasTabs" id="categorias">
-            <div class="row py-4">
+            <div class="row py-4" sec:authorize="hasRole('ROLE_ADMIN')">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
                         <a class="nav-link" 
@@ -51,6 +52,7 @@
                                             <td class="text-center">[[${producto.existencias}]]</td>
                                             <td class="text-end">[[${#numbers.formatDecimal(producto.precio*producto.existencias, 1, 'DEFAULT', 2, 'DEFAULT')}]]</td>
                                             <td th:text="${producto.activo} ? 'Activa' : 'Inactiva'" />
+                                            <td sec:authorize="hasRole('ROLE_ADMIN')">
                                         </tr>
                                     </tbody>
                                 </table>
